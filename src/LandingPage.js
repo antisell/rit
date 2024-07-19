@@ -20,12 +20,12 @@ const LandingPage = () => {
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <section className="mb-16 flex flex-col items-center">
-          <div className="w-full mb-8 flex justify-center">
-            <img src="/emblem.jpg" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-1/4" />
+        <section className="mb-16 flex items-center">
+          <div className="w-1/3 pr-8 flex justify-center items-center">
+            <img src="/emblem.jpg" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-full max-w-xs" />
           </div>
-          <div className="w-full">
-            <h2 className="text-4xl font-semibold mb-6 text-blue-800 text-center">Our Mission</h2>
+          <div className="w-2/3 pl-8">
+            <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
               RIT First Responder Benefits Program is a non-profit organization launching a pilot with the intent to recruit, retain, and reward volunteer first responders. The volunteer first responder ranks have been declining at a rapid rate over the years and are now at catastrophic levels in the state and across the country.
             </p>
@@ -102,7 +102,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="w-1/3">
-              <img src="/api/placeholder/300/400" alt="Volunteer firefighter" className="rounded-lg shadow-xl" />
+              <img src="/usi.png" alt="Volunteer firefighter" className="rounded-lg shadow-xl w-1/2" />
             </div>
           </div>
         </section>
