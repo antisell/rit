@@ -14,8 +14,18 @@ const LandingPage = () => {
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">RIT First Responder Benefits Program</h1>
-          <p className="text-2xl">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div>
+              <h1 className="text-5xl font-bold mb-4">RIT First Responder Benefits Program</h1>
+              <p className="text-2xl">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
+            </div>
+            <div className="mt-6 md:mt-0 text-center">
+              <button className="bg-white text-blue-800 font-bold py-2 px-4 rounded hover:bg-blue-100 transition-colors">
+                Sign Up For Free
+              </button>
+              <p className="text-sm mt-2">Use Code RIT on the following page</p>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -94,11 +104,21 @@ const LandingPage = () => {
               <p className="text-lg mb-6 leading-relaxed">
                 Any Pennsylvania volunteer fire department can easily be included in the benefits program by contacting us today. Reward those that give back to your communities and let them reap the benefits from the RIT First Responder Program at no cost to you.
               </p>
-              <div className="bg-white p-6 rounded-md inline-block shadow-md">
-                <h3 className="text-2xl font-semibold mb-4 text-blue-800">Contact Us</h3>
-                <p className="mb-2"><strong>Program Contact:</strong> Brooks Stahlnecker</p>
-                <p className="mb-2"><strong>Email:</strong> RITbenefits@gmail.com</p>
-                <p><strong>Phone:</strong> 570-279-6099</p>
+              <div className="bg-white p-6 rounded-md shadow-md">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-4 text-blue-800">Contact Us</h3>
+                    <p className="mb-2"><strong>Program Contact:</strong> Brooks Stahlnecker</p>
+                    <p className="mb-2"><strong>Email:</strong> RITbenefits@gmail.com</p>
+                    <p><strong>Phone:</strong> 570-279-6099</p>
+                  </div>
+                  <div className="mt-4 md:mt-0 text-center">
+                    <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition-colors">
+                      Sign Up For Free
+                    </button>
+                    <p className="text-sm mt-2 text-gray-600">Use Code RIT on the following page</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-full md:w-1/3 mt-8 md:mt-0 flex justify-center">
