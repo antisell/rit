@@ -102,7 +102,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="w-full md:w-1/3 mt-8 md:mt-0 flex justify-center">
-              <img src="/usi.png" alt="USI Logo" className="rounded-lg w-1/2 md:w-full" />
+              <img src="/usi.png" alt="USI Logo" className="rounded-lg w-1/2" />
             </div>
           </div>
         </section>
