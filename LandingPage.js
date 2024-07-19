@@ -27,7 +27,7 @@ const LandingPage = () => {
       <main className="container mx-auto px-4 py-12">
         <section className="mb-16 flex items-center">
           <div className="w-1/2 pr-8">
-            <img src="/api/placeholder/500/500" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-full" />
+            <img src="/emblem.jpg" alt="RIT Logo" className="rounded-lg shadow-xl w-1/2" />
           </div>
           <div className="w-1/2 pl-8">
             <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
@@ -91,7 +91,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="w-1/3">
-              <img src="/api/placeholder/300/400" alt="Volunteer firefighter" className="rounded-lg shadow-xl" />
+              <img src="/usi.png" alt="USI Logo" className="rounded-lg shadow-xl w-1/4" />
             </div>
           </div>
         </section>
