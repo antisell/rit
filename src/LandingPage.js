@@ -19,7 +19,7 @@ const LandingPage = () => {
             <p className="text-2xl">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
           </div>
           <div className="w-1/2">
-            <img src="/api/placeholder/600/400" alt="First Responders in Action" className="rounded-lg shadow-xl" />
+            <img src="/emblem.jpg" alt="First Responders in Action" className="rounded-lg shadow-xl w-1/2" />
           </div>
         </div>
       </header>
@@ -27,7 +27,7 @@ const LandingPage = () => {
       <main className="container mx-auto px-4 py-12">
         <section className="mb-16 flex items-center">
           <div className="w-1/2 pr-8">
-            <img src="/emblem.jpg" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-full" />
+            <img src="/emblem.jpg" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-1/2" />
           </div>
           <div className="w-1/2 pl-8">
             <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
