@@ -102,7 +102,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="w-1/3">
-              <img src="/usi.png" alt="Volunteer firefighter" className="rounded-lg shadow-xl w-1/2" />
+              <img src="/usi.png" alt="USI Logo" className="rounded-lg w-1/2" />
             </div>
           </div>
         </section>
