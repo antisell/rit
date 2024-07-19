@@ -111,11 +111,11 @@ const LandingPage = () => {
                 <p className="mb-2"><strong>Email:</strong> RITbenefits@gmail.com</p>
                 <p><strong>Phone:</strong> 570-279-6099</p>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center md:items-start">
                 <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all text-center">
                   Sign Up For Free
                 </a>
-                <p className="text-sm mt-2 text-gray-600 text-center">Use Code RIT on the following page</p>
+                <p className="text-sm mt-2 text-gray-600 text-center md:text-left">Use Code RIT on the following page</p>
               </div>
             </div>
           </div>
