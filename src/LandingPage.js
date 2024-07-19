@@ -121,7 +121,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="lg:w-1/3 flex justify-center items-center mt-6 lg:mt-0 h-full">
-              <div className="flex justify-center items-center w-full">
+              <div className="flex justify-center items-center w-full h-full">
                 <img src="/usi.png" alt="USI Affinity" className="w-32 lg:w-40" />
               </div>
             </div>
