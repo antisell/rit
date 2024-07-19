@@ -96,7 +96,6 @@ const LandingPage = () => {
             />
           </div>
         </section>
-
         <section className="bg-blue-100 p-8 rounded-xl">
           <div className="flex flex-col lg:flex-row justify-between items-start">
             <div className="lg:w-2/3 lg:pr-8">
@@ -121,8 +120,10 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-             <div className="lg:w-1/3 flex justify-center items-center mt-6 lg:mt-0">
+            <div className="lg:w-1/3 flex justify-center items-center mt-6 lg:mt-0 h-full">
+              <div className="flex justify-center items-center w-full">
                 <img src="/usi.png" alt="USI Affinity" className="w-32 lg:w-40" />
+              </div>
             </div>
           </div>
         </section>
