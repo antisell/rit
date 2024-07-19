@@ -105,14 +105,14 @@ const LandingPage = () => {
               Any Pennsylvania volunteer fire department can easily be included in the benefits program by contacting us today. Reward those that give back to your communities and let them reap the benefits from the RIT First Responder Program at no cost to you.
             </p>
             <div className="bg-white p-6 rounded-lg shadow-md mb-4 w-full">
-              <div className="flex flex-col md:flex-row justify-between items-center">
-                <div className="mb-4 md:mb-0 md:mr-4">
+              <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <div className="text-center md:text-left">
                   <h3 className="text-2xl font-semibold mb-4 text-blue-800">Contact Us</h3>
                   <p className="mb-2"><strong>Program Contact:</strong> Brooks Stahlnecker</p>
                   <p className="mb-2"><strong>Email:</strong> RITbenefits@gmail.com</p>
                   <p><strong>Phone:</strong> 570-279-6099</p>
                 </div>
-                <div className="flex flex-col items-center md:items-end">
+                <div className="flex flex-col items-center">
                   <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all text-center">
                     Sign Up For Free
                   </a>
