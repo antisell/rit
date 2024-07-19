@@ -20,11 +20,11 @@ const LandingPage = () => {
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <section className="mb-16 flex items-center">
-          <div className="w-1/3 pr-8 flex justify-center items-center">
+        <section className="mb-16 flex flex-col md:flex-row items-center">
+          <div className="w-full md:w-1/3 mb-8 md:mb-0 md:pr-8 flex justify-center items-center">
             <img src="/emblem.jpg" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-full max-w-xs" />
           </div>
-          <div className="w-2/3 pl-8">
+          <div className="w-full md:w-2/3 md:pl-8">
             <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
               RIT First Responder Benefits Program is a non-profit organization launching a pilot with the intent to recruit, retain, and reward volunteer first responders. The volunteer first responder ranks have been declining at a rapid rate over the years and are now at catastrophic levels in the state and across the country.
@@ -88,8 +88,8 @@ const LandingPage = () => {
         </section>
 
         <section className="bg-gradient-to-r from-blue-100 to-blue-200 p-12 rounded-xl shadow-lg">
-          <div className="flex items-center">
-            <div className="w-2/3 pr-8">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="w-full md:w-2/3 md:pr-8">
               <h2 className="text-4xl font-semibold mb-6 text-blue-800">Get Involved</h2>
               <p className="text-lg mb-6 leading-relaxed">
                 Any Pennsylvania volunteer fire department can easily be included in the benefits program by contacting us today. Reward those that give back to your communities and let them reap the benefits from the RIT First Responder Program at no cost to you.
@@ -101,8 +101,8 @@ const LandingPage = () => {
                 <p><strong>Phone:</strong> 570-279-6099</p>
               </div>
             </div>
-            <div className="w-1/3">
-              <img src="/usi.png" alt="USI Logo" className="rounded-lg w-1/2" />
+            <div className="w-full md:w-1/3 mt-8 md:mt-0 flex justify-center">
+              <img src="/usi.png" alt="USI Logo" className="rounded-lg w-1/2 md:w-full" />
             </div>
           </div>
         </section>
