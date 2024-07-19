@@ -32,7 +32,7 @@ const LandingPage = () => {
       <main className="container mx-auto px-4 py-12">
         <section className="mb-16 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/3 mb-8 md:mb-0 md:pr-8 flex justify-center items-center">
-            <img src="/api/placeholder/500/500" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-full max-w-xs" />
+            <img src="/emblem.jpg" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-full max-w-xs" />
           </div>
           <div className="w-full md:w-2/3 md:pl-8">
             <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
@@ -116,7 +116,7 @@ const LandingPage = () => {
               <p className="text-sm mt-2 text-gray-600 text-center">Use Code RIT on the following page</p>
             </div>
             <div className="flex justify-center lg:justify-end items-center">
-              <img src="/api/placeholder/128/64" alt="USI Affinity" className="w-32 lg:w-40" />
+              <img src="/usi.png" alt="USI Affinity" className="w-32 lg:w-40" />
             </div>
           </div>
         </section>
