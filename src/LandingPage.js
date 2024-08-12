@@ -35,7 +35,7 @@ const LandingPage = () => {
       <main className="container mx-auto px-4 py-12">
         <section className="mb-16 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/3 mb-8 md:mb-0 md:pr-8 flex justify-center items-center">
-            <img src="/RIT-Logo.png" alt="RIT First Responder Logo" className="rounded-lg shadow-xl w-full max-w-xs" />
+            <img src="/RIT_Logo.png" alt="RIT First Responder Logo" className="rounded-lg shadow-xl w-full max-w-xs" />
           </div>
           <div className="w-full md:w-2/3 md:pl-8">
             <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
