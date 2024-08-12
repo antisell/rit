@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Heart, Phone, FileText, Truck, Users, Pill, ShoppingBag } from 'lucide-react';
+import { FileText, Users, Heart, Pill, Phone, ShoppingBag } from 'lucide-react';
 
 const BenefitCard = ({ icon: Icon, title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -20,8 +20,11 @@ const LandingPage = () => {
               <p className="text-2xl">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
             </div>
             <div className="mt-6 md:mt-0 text-center">
-              <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all">
+              <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all mb-4">
                 Sign Up For Free
+              </a>
+              <a href="https://www.healthserviceshub.com" className="inline-block bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 hover:shadow-xl transition-all">
+                Login to my benefits
               </a>
               <p className="text-sm mt-2">Use code RIT on the following page</p>
             </div>
@@ -32,7 +35,7 @@ const LandingPage = () => {
       <main className="container mx-auto px-4 py-12">
         <section className="mb-16 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/3 mb-8 md:mb-0 md:pr-8 flex justify-center items-center">
-            <img src="/emblem.jpg" alt="First Responder Firefighter Emblem" className="rounded-lg shadow-xl w-full max-w-xs" />
+            <img src="/RIT-Logo.png" alt="RIT First Responder Logo" className="rounded-lg shadow-xl w-full max-w-xs" />
           </div>
           <div className="w-full md:w-2/3 md:pl-8">
             <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
@@ -55,11 +58,6 @@ const LandingPage = () => {
           <h2 className="text-4xl font-semibold mb-8 text-center text-blue-800">Key Benefits</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <BenefitCard
-              icon={Shield}
-              title="Life Insurance"
-              description="$50,000 of Guaranteed Issue life insurance coverage to help financially protect your family. Includes will preparation services."
-            />
-            <BenefitCard
               icon={FileText}
               title="Financial Fire Drill"
               description="Financial wellness course with 18 self-paced modules to walk you through filling out financial Fire Drill."
@@ -68,11 +66,6 @@ const LandingPage = () => {
               icon={Users}
               title="First Responder Assistance Program"
               description="Counseling services providing resources and support to prepare for, respond to, and recover from work-related stress and trauma."
-            />
-            <BenefitCard
-              icon={Truck}
-              title="Roadside Assistance and Mechanical Repair"
-              description="24/7 emergency roadside assistance in the US and Canada. Up to $250 per mechanical repair, $500 total annually."
             />
             <BenefitCard
               icon={Heart}
@@ -96,35 +89,36 @@ const LandingPage = () => {
             />
           </div>
         </section>
-     <section className="bg-blue-100 p-8 rounded-xl">
-        <div className="flex flex-col lg:flex-row justify-between items-stretch">
-          <div className="lg:w-2/3 lg:pr-8">
-            <h2 className="text-4xl font-semibold mb-4 text-blue-800">Get Involved</h2>
-            <p className="text-lg mb-6 leading-relaxed">
-              Any Pennsylvania volunteer fire department can easily be included in the benefits program by contacting us today. Reward those that give back to your communities and let them reap the benefits from the RIT First Responder Program at no cost to you.
-            </p>
-            <div className="bg-white p-6 rounded-lg shadow-md mb-4 w-full">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
-                <div className="text-left">
-                  <h3 className="text-2xl font-semibold mb-4 text-blue-800">Contact Us</h3>
-                  <p className="mb-2"><strong>Program Contact:</strong> Brooks Stahlnecker</p>
-                  <p className="mb-2"><strong>Email:</strong> RITbenefits@gmail.com</p>
-                  <p><strong>Phone:</strong> 570-279-6099</p>
-                </div>
-                <div className="flex flex-col items-center md:items-end">
-                  <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all text-center">
-                    Sign Up For Free
-                  </a>
-                  <p className="text-sm mt-2 text-gray-600 text-center">Use Code RIT on the following page</p>
+
+        <section className="bg-blue-100 p-8 rounded-xl">
+          <div className="flex flex-col lg:flex-row justify-between items-stretch">
+            <div className="lg:w-2/3 lg:pr-8">
+              <h2 className="text-4xl font-semibold mb-4 text-blue-800">Get Involved</h2>
+              <p className="text-lg mb-6 leading-relaxed">
+                Any Pennsylvania volunteer fire department can easily be included in the benefits program by contacting us today. Reward those that give back to your communities and let them reap the benefits from the RIT First Responder Program at no cost to you.
+              </p>
+              <div className="bg-white p-6 rounded-lg shadow-md mb-4 w-full">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
+                  <div className="text-left">
+                    <h3 className="text-2xl font-semibold mb-4 text-blue-800">Contact Us</h3>
+                    <p className="mb-2"><strong>Program Contact:</strong> Brooks Stahlnecker</p>
+                    <p className="mb-2"><strong>Email:</strong> RITbenefits@gmail.com</p>
+                    <p><strong>Phone:</strong> 570-279-6099</p>
+                  </div>
+                  <div className="flex flex-col items-center md:items-end">
+                    <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all text-center">
+                      Sign Up For Free
+                    </a>
+                    <p className="text-sm mt-2 text-gray-600 text-center">Use Code RIT on the following page</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="lg:w-1/3 flex items-center justify-center mt-6 lg:mt-0">
+              <img src="/usi.png" alt="USI Affinity" className="w-32 lg:w-40" />
+            </div>
           </div>
-          <div className="lg:w-1/3 flex items-center justify-center mt-6 lg:mt-0">
-            <img src="/usi.png" alt="USI Affinity" className="w-32 lg:w-40" />
-          </div>
-        </div>
-      </section>
+        </section>
       </main>
 
       <footer className="bg-gray-800 text-white py-8 mt-12">
