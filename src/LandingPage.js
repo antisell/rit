@@ -12,46 +12,44 @@ const BenefitCard = ({ icon: Icon, title, description }) => (
 const LandingPage = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <header className="bg-blue-600 text-white py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div>
-              <h1 className="text-5xl font-bold mb-4">RIT First Responder Benefits Program</h1>
-              <p className="text-2xl">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
+            <div className="flex items-center mb-4 md:mb-0">
+              <img src="/RIT_Logo.png" alt="RIT First Responder Logo" className="h-16 mr-4" />
+              <div>
+                <h1 className="text-3xl md:text-4xl font-bold">RIT First Responder Benefits Program</h1>
+                <p className="text-xl mt-2">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
+              </div>
             </div>
-            <div className="mt-6 md:mt-0 text-center flex flex-col items-center">
-              <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all mb-4 w-full">
+            <div className="flex flex-col items-end">
+              <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-white text-blue-800 font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all mb-2 w-full md:w-auto text-center">
                 Sign Up For Free
               </a>
-              <a href="https://ritfirstresponder.org/login" className="inline-block bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 hover:shadow-xl transition-all w-full">
+              <p className="text-sm mb-2">Use code RIT on the following page</p>
+              <a href="https://ritfirstresponder.org/login" className="inline-block bg-blue-500 text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-blue-600 hover:shadow-xl transition-all w-full md:w-auto text-center">
                 Login to my benefits
               </a>
-              <p className="text-sm mt-2">Use code RIT on the following page</p>
             </div>
           </div>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <section className="mb-16 flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-1/3 mb-8 md:mb-0 md:pr-8 flex justify-center items-center">
-            <img src="/RIT_Logo.png" alt="RIT First Responder Logo" className="rounded-lg shadow-xl w-full max-w-xs" />
-          </div>
-          <div className="w-full md:w-2/3 md:pl-8">
-            <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              RIT First Responder Benefits Program is a non-profit organization launching a pilot with the intent to recruit, retain, and reward volunteer first responders. The volunteer first responder ranks have been declining at a rapid rate over the years and are now at catastrophic levels in the state and across the country.
-            </p>
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Our organization and associated programs intend to make a positive impact in all communities by increasing the number of volunteer first responders. We are raising funds to help recruit, retain, and reward volunteer first responders.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              All qualifying First Responders* will receive the following benefits at no cost to the individual or fire department.
-            </p>
-            <p className="text-sm text-gray-500 mt-4">
-              *Qualifying First Responders is defined as any team member that is important to day-to-day operations at your Station is eligible for the covered benefits program. This can include team members that are NOT front-line responders.
-            </p>
-          </div>
+        <section className="mb-16">
+          <h2 className="text-4xl font-semibold mb-6 text-blue-800 text-center">Our Mission</h2>
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            RIT First Responder Benefits Program is a non-profit organization launching a pilot with the intent to recruit, retain, and reward volunteer first responders. The volunteer first responder ranks have been declining at a rapid rate over the years and are now at catastrophic levels in the state and across the country.
+          </p>
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            Our organization and associated programs intend to make a positive impact in all communities by increasing the number of volunteer first responders. We are raising funds to help recruit, retain, and reward volunteer first responders.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            All qualifying First Responders* will receive the following benefits at no cost to the individual or fire department.
+          </p>
+          <p className="text-sm text-gray-500 mt-4">
+            *Qualifying First Responders is defined as any team member that is important to day-to-day operations at your Station is eligible for the covered benefits program. This can include team members that are NOT front-line responders.
+          </p>
         </section>
 
         <section className="mb-16">
