@@ -20,14 +20,13 @@ const LandingPage = () => {
               <p className="text-2xl">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
             </div>
             <div className="mt-6 md:mt-0 text-center flex flex-col items-center">
-              <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all mb-4 w-full">
+              <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all mb-2 w-full">
                 Sign Up For Free
               </a>
-               <p className="text-sm mt-2">Use code RIT on the following page</p>
+              <p className="text-sm mb-6">Use code RIT on the following page</p>
               <a href="https://ritfirstresponder.org/login" className="inline-block bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 hover:shadow-xl transition-all w-full">
                 Login to my benefits
               </a>
-             
             </div>
           </div>
         </div>
