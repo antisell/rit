@@ -1,11 +1,47 @@
 import React from 'react';
-import { FileText, Users, Heart, Pill, Phone, ShoppingBag } from 'lucide-react';
+import { FileText, Users, Heart, Pill, Phone, ShoppingBag, Shield, Car } from 'lucide-react';
 
-const BenefitCard = ({ icon: Icon, title, description }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-    <Icon className="w-12 h-12 text-blue-600 mb-4" />
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+const BenefitCard = ({ icon: Icon, title, description, isHighlighted = false, isComingSoon = false }) => (
+  <div className={`bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all ${
+    isHighlighted 
+      ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 relative overflow-hidden transform hover:-translate-y-1' 
+      : ''
+  }`}>
+    {isHighlighted && (
+      <>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute inset-0 bg-yellow-200 opacity-50"></div>
+          {[...Array(8)].map((_, i) => (
+            <div 
+              key={i} 
+              className="absolute w-32 h-64 bg-yellow-100 opacity-30"
+              style={{
+                top: '50%',
+                left: '50%',
+                transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
+                transformOrigin: 'bottom',
+                clipPath: 'polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%)',
+              }}
+            ></div>
+          ))}
+        </div>
+        <div className="absolute top-0 right-0 w-24 h-24">
+          <div className="absolute transform rotate-45 bg-blue-600 text-white text-xs font-bold py-1 right-[-35px] top-[32px] w-[170px] text-center">
+            PREQUALIFIED
+          </div>
+        </div>
+      </>
+    )}
+    <div className="relative z-10">
+      <Icon className={`w-16 h-16 mb-4 ${isHighlighted ? 'text-blue-800' : 'text-blue-600'}`} />
+      <h3 className={`text-2xl font-bold mb-2 ${isHighlighted ? 'text-blue-900' : ''}`}>{title}</h3>
+      <p className={`text-lg ${isHighlighted ? 'text-blue-800' : 'text-gray-600'}`}>{description}</p>
+      {isComingSoon && (
+        <div className="mt-4 inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+          Coming Soon - 10/1/2024
+        </div>
+      )}
+    </div>
   </div>
 );
 
@@ -56,7 +92,22 @@ const LandingPage = () => {
 
         <section className="mb-16">
           <h2 className="text-4xl font-semibold mb-8 text-center text-blue-800">Key Benefits</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="md:col-span-2">
+              <BenefitCard
+                icon={Shield}
+                title="Life Insurance"
+                description="$50,000 of life insurance benefit for first responders under 64. Automatic enrollment upon registration."
+                isHighlighted={true}
+                isComingSoon={true}
+              />
+            </div>
+            <BenefitCard
+              icon={Car}
+              title="Motor Club"
+              description="24/7 roadside assistance including tows, battery service, emergency fluid delivery, and more. Includes reimbursement for repairs up to $500."
+              isComingSoon={true}
+            />
             <BenefitCard
               icon={FileText}
               title="Financial Fire Drill"
@@ -82,11 +133,15 @@ const LandingPage = () => {
               title="Telemedicine"
               description="Unlimited urgent virtual appointments for volunteers and their families (up to age 26 when living in the same household)."
             />
-            <BenefitCard
-              icon={ShoppingBag}
-              title="Member Discount Marketplace"
-              description="Discounts on travel, tickets, electronics, home and family products, food, local deals, and much more."
-            />
+            <div className="md:col-span-2 flex justify-center">
+              <div className="md:w-1/2">
+                <BenefitCard
+                  icon={ShoppingBag}
+                  title="Member Discount Marketplace"
+                  description="Discounts on travel, tickets, electronics, home and family products, food, local deals, and much more."
+                />
+              </div>
+            </div>
           </div>
         </section>
 
