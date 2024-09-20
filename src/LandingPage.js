@@ -52,8 +52,8 @@ const LandingPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div>
-              <h1 className="text-5xl font-bold mb-4">RIT First Responder Benefits Program</h1>
-              <p className="text-2xl">Recruiting, Retaining, and Rewarding Volunteer First Responders</p>
+              <h1 className="text-5xl font-bold mb-4">First Responder Wellness Program</h1>
+              <p className="text-2xl">Rewarding, Retaining, and Recruiting for the Future</p>
             </div>
             <div className="mt-6 md:mt-0 text-center flex flex-col items-center">
               <a href="https://www.healthserviceshub.com/account/promo" className="inline-block bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-100 hover:shadow-xl transition-all mb-2 w-full">
