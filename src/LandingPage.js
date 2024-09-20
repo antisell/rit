@@ -97,7 +97,7 @@ const LandingPage = () => {
               <BenefitCard
                 icon={Shield}
                 title="Life Insurance"
-                description="$50,000 of life insurance benefit for first responders under 64. Automatic enrollment upon registration."
+                description="$50,000 of life insurance benefit for first responders age 64 and under. Automatic enrollment upon registration."
                 isHighlighted={true}
                 isComingSoon={true}
               />
