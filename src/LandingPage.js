@@ -61,7 +61,7 @@ const LandingPage = () => {
               </a>
               <p className="text-sm mb-6">Use code RIT on the following page</p>
               <a href="https://ritfirstresponder.org/login" className="inline-block bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 hover:shadow-xl transition-all w-full">
-                Login to my benefits
+                Login
               </a>
             </div>
           </div>
@@ -76,7 +76,7 @@ const LandingPage = () => {
           <div className="w-full md:w-2/3 md:pl-8">
             <h2 className="text-4xl font-semibold mb-6 text-blue-800">Our Mission</h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              RIT First Responder Benefits Program is a non-profit organization launching a pilot with the intent to recruit, retain, and reward volunteer first responders. The volunteer first responder ranks have been declining at a rapid rate over the years and are now at catastrophic levels in the state and across the country.
+              RIT First Responder Wellness Program is a non-profit organization launching a pilot with the intent to recruit, retain, and reward volunteer first responders. The volunteer first responder ranks have been declining at a rapid rate over the years and are now at catastrophic levels in the state and across the country.
             </p>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
               Our organization and associated programs intend to make a positive impact in all communities by increasing the number of volunteer first responders. We are raising funds to help recruit, retain, and reward volunteer first responders.
